@@ -1,0 +1,13 @@
+@import '../App/variables';
+
+.tlp .slds-checkbox--faux {
+  background: map-get($colors , 'tlp');
+}
+
+.lu .slds-checkbox--faux {
+  background: map-get($colors , 'lu');
+}
+
+.ews .slds-checkbox [type=checkbox][disabled]+.slds-checkbox__label .slds-checkbox--faux {
+  background: map-get($colors , 'ews') ;
+}

@@ -1,0 +1,30 @@
+$colors: (
+    "background": #FFFCF2,
+    "ews": steelblue,
+    "lu": #BC6D21,
+    "tlp": #C4CFC3,
+    "x-axis": darkgray,
+    "y-axis": darkgray,
+    "legend": darkgray,
+    "renewal": #F5C739,
+    "aov-increase": #74BB63,
+    "aov-decrease": #D26464,
+    "attrition": #ec0d0d,
+    "lic-decrease": #825017,
+    "release": #1AA5D0,
+    "red": #d62728,
+    "accelerator": lightgray
+);
+
+// events
+$events: "aov-increase", "aov-decrease", "attrition", "lic-decrease", "release", "renewal";
+
+$interval-events: "red", "accelerator";
+
+$point-radius: 5;
+
+body {
+    // background: map-get($colors , "background");
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}

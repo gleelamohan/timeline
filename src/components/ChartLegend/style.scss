@@ -1,0 +1,32 @@
+@import '../App/variables';
+
+@each $event in $events {
+    .circle-event-#{$event} {
+        width: $point-radius * 2 + px;
+        height: $point-radius * 2 + px;
+        border-radius: $point-radius + px;
+        background: map-get($colors, $event);
+        display: inline-block;
+    }
+}
+
+.legend-points text {
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.legend-text {
+    fill: map-get($colors , 'legend');
+}
+
+.line-legend text {
+    text-transform: uppercase;
+}
+
+.event-legend text {
+    text-transform: lowercase;
+}
+
+.interval-legend text {
+    text-transform: capitalize;
+}

@@ -1,0 +1,13 @@
+@import "../App/variables";
+
+// axes
+@each $axis in "x-axis", "y-axis" {
+    .#{$axis} path, line {
+        stroke: map-get($colors, $axis);
+    }
+
+    .#{$axis} text {
+        fill: map-get($colors, $axis);
+    }
+}
+

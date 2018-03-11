@@ -1,0 +1,12 @@
+@import "../App/variables";
+
+@each $event in $interval-events {
+    line.interval-event-#{$event} {
+        stroke: map-get($colors, $event);
+    }
+
+    rect.interval-event-#{$event} {
+        fill: map-get($colors, $event);
+    }
+
+}

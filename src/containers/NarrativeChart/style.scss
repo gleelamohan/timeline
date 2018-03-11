@@ -1,0 +1,39 @@
+@import "../../components/App/variables";
+
+@each $line in ews, lu, tlp {
+    // Chart lines
+    .line-#{$line} {
+        stroke: map-get($colors, $line);
+        @if $line != 'ews' {
+            // Stroked line only for LU and TLP
+            stroke-dasharray: (2 3);
+        }
+        stroke-width: 3px;
+    }
+
+    .mouseline-#{$line} {
+        stroke: map-get($colors, $line);
+        fill: map-get($colors, "background");
+        stroke-width: 2px;
+    }
+
+    // Legend
+    .legend-#{$line} {
+        fill: map-get($colors, $line);
+    }
+}
+
+.legend-lines text {
+    font-size: 0.75em;
+    font-family: sans-serif;
+}
+
+.chart-container {
+    width: 100%;
+    height: 90vh;
+}
+
+.checkbox_margin {
+    margin-top: 10px;
+}
+

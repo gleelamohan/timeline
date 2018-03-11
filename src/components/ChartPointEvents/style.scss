@@ -1,0 +1,7 @@
+@import "../App/variables";
+
+@each $event in $events {
+    .event-#{$event} {
+        fill: map-get($colors, $event);
+    }
+}
